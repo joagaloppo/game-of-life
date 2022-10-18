@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main: #ffdd33;
+  --main-hover: #f5cc00;
+  --font: #665500;
+}
+
+* {
+  font-family: 'Barlow', sans-serif;
+  color: #333;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-block: 10px;
+}
+
+button {
+  cursor: pointer;
+  height: 40px;
+  padding-inline: 18px;
+  margin-right: 10px;
+  border: none;
+  background-color: var(--main);
+  color: var(--font);
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius:6px;
+}
+
+button:hover {
+  background-color: var(--main-hover);
+  transition: 0.3s;
+}
+
+/*###############*/
+/*      INFO     */
+/*###############*/
+
+span {
+  cursor: default;
+  height: 40px;
+  line-height: 40px;
+  padding-inline: 18px;
+  margin-right: 10px;
+  background-color: #eee;
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius:6px;
+}
+
+/*###############*/
+/*    INPUTS     */
+/*###############*/
+
+label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 40px;
+  height: 40px;
+  padding-inline: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 10px;
+  font-size:14px;
+  border-radius:6px;
+}
+
+input:last-child {
+  margin-right: 0;
+}
+
+/*###############*/
+/*     TABLE     */
+/*###############*/
+
+.table {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+/*###############*/
+/*    CIRCLE     */
+/*###############*/
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--main);
+  border-radius: 50%;
+  cursor: pointer;
+  /* transition: 0.3s; */
+}
+
+.circle.false {
+  background: #fff;
+}
+
+.circle.true {
+  background: var(--main);
+}
+
+.circle.true:hover {
+  border: 2px solid var(--main-hover);
+  background: var(--main-hover);
+}
+
+.circle:hover {
+  background-color: #fff1aa;
+}
